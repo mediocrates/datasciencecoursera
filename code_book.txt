@@ -62,7 +62,7 @@ The following is taken from the code book of the raw dataset, and is surrounded 
     The complete list of variables of each feature vector is available in 'features.txt'
 """
 
-From the above variables and numbers associated with them, we grab only the ones with "mean" or "std" in the name. The following descriptions describe our tidy data set:
+From the above variables and numbers associated with them, we grab only the ones with "mean" or "std" in the name. The units of these variables are the same as the units of the original measurements from which they were derived, since mean and std have the same units as the raw data. The following descriptions describe our tidy data set:
 
 tBodyAcc-mean()-X
 tBodyAcc-mean()-Y
