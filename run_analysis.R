@@ -37,11 +37,8 @@ run_analysis <- function() {
         ## select only columns measuring mean or stdev
         tidy.data <- dataset[,grepl("mean|std", colnames(dataset), ignore.case = TRUE)]
         
-        print(dim(tidy.data))
-        
         ## compute average of columns in tidy.data
         summary <- t(data.frame(apply(tidy.data, 2, mean)))
-        print(dim(summary))
         colnames(summary) <- colnames(tidy.data)
         
         ## write summary to file
